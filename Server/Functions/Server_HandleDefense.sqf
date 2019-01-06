@@ -47,5 +47,5 @@ while {alive _defense} do {
 			diag_log Format["[WFRE (INFORMATION)][frameno:%1 | ticktime:%2] Server_HandleDefense.sqf: Canceled auto manning, the barracks is destroyed.",diag_frameno,diag_tickTime];
 		};
 	};
-	sleep 420;
+	uiSleep 420;
 };

@@ -6,5 +6,5 @@ _UsedAT = WF_Logic getVariable "UsedAT";
 		WF_Logic setVariable ["UsedAT",_UsedAT2,true];
 	
 } forEach _UsedAT;
-    sleep 5;
+    uiSleep 5;
 };
