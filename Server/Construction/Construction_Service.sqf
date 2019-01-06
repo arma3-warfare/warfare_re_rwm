@@ -21,7 +21,7 @@ _timeNextUpdate = _startTime + _time;
 
 _objects = [];
 _objects = [[_siteName,[0,0,-0.000230789],359.997,1,0],["Land_Bricks_V3_F",[0.416992,-5.62012,-0.305746],0.0130822,1,0],["Land_BarrelSand_grey_F",[-5.59448,3.26929,6.29425e-005],359.997,1,0],["Land_Pallet_F",[-2.62976,-6.04736,5.53131e-005],0.0130822,1,0],["Land_MetalBarrel_empty_F",[6.63696,0.694336,0.000753403],359.991,1,0],["Land_WorkStand_F",[6.41797,-2.52051,0.000915527],270,1,0],["Land_BarrelSand_grey_F",[-6.73267,2.06372,6.10352e-005],359.997,1,0],["MetalBarrel_burning_F",[7.19604,2.8855,0.00028801],0.0135841,1,0],["Land_MetalBarrel_F",[6.08984,5.5415,0.00028801],0.0135841,1,0],["Land_BarrelSand_grey_F",[-7.13452,4.40747,6.29425e-005],359.997,1,0],["RoadBarrier_F",[0.221924,-8.58496,0.00206566],0.0130822,1,0],["Land_BarrelSand_grey_F",[-8.27271,2.80054,6.10352e-005],359.997,1,0],["Land_WoodenCrate_01_stack_x5_F",[-7.91895,-4.09668,0.00037384],0.0128253,1,0],["Land_Bricks_V1_F",[6.40332,-7.16162,0.000520706],0.0130822,1,0],["Land_Bricks_V1_F",[-6.18384,-8.09961,0.000535965],50.0093,1,0],["RoadCone_F",[-10.4381,-8.94336,0.000131607],0.0119093,1,0],["RoadCone_F",[11.1655,-8.79932,0.00034523],359.991,1,0],["RoadCone_F",[-10.5692,12.6655,0.000509262],359.948,1,0],["RoadCone_F",[11.0276,12.3904,0.000509262],359.948,1,0]];
-_construct = Compile PreprocessFile "ca\modules\dyno\data\scripts\objectMapper.sqf";
+_construct = Compile PreprocessFile "Server\Functions\Server_ObjectMapper.sqf";
 _constructed = ([_position,_direction,_objects] Call _construct);
 
 //--- Create the logic.
