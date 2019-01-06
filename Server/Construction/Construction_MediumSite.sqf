@@ -64,7 +64,7 @@ if !(paramUseWorkers) then {
 	
 	//--- Awaits for 33% of completion.
 	while {true} do {
-		sleep 1;
+		uiSleep 1;
 		if ((_nearLogic getVariable "WFBE_B_Completion") >= 33.33) exitWith {};
 	};
 };
@@ -78,7 +78,7 @@ if !(paramUseWorkers) then {
 } else {
 	//--- Awaits for 66%
 	while {true} do {
-		sleep 1;
+		uiSleep 1;
 		if ((_nearLogic getVariable "WFBE_B_Completion") >= 66.66) exitWith {};
 	};
 };
@@ -97,7 +97,7 @@ if !(paramUseWorkers) then {
 } else {
 	//--- Awaits for 100%
 	while {true} do {
-		sleep 1;
+		uiSleep 1;
 		if ((_nearLogic getVariable "WFBE_B_Completion") >= 100) exitWith {};
 	};
 	

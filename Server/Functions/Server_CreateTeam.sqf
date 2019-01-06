@@ -47,4 +47,4 @@ _ctype = switch (_side) do {case West: {'WEST'}; case East: {'EAST'}; case Resis
 
 
 
-[_units,_vehicles,_team,_crews]
+[_units,_vehicles,_team,_crews];

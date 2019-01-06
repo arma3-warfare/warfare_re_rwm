@@ -11,7 +11,7 @@ _playerTeam = (_args select 3);
 diag_log Format["[WFRE (INFORMATION)][frameno:%4 | ticktime:%5] Server_HandleSpecial: The %1 %2 Team (Leader: %3) has called an UAV",str _side,_playerTeam,name (leader _playerTeam),diag_frameno,diag_tickTime];
 
 while {true} do {
-	sleep 5;
+	uiSleep 5;
 	if (!(isPlayer (leader _playerTeam)) || !alive _uav) exitWith {};
 };
 

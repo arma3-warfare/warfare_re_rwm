@@ -9,7 +9,7 @@ sleep ((Random 200) / 100);
 waitUntil {!isNil 'townInit'};
 
 while {!gameOver} do {
-	sleep 60;
+	uiSleep 60;
 	_AITrucks = Format ["WFBE_%1_AISupplyTrucks",_sideText] Call GetNamespace;
 	_full = false;
 	if (count _AITrucks >= _maist) then {_full = true};
