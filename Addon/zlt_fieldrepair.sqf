@@ -160,7 +160,7 @@ zlt_prc_repairvehicle = {
 		(format[STR_REPAIR_MSG_STRING, _length, _vehname] ) call zlt_fnc_notify;
 		if (_length <= 0) then {_repairFinished = true;};
 		_length = _length - 1;
-		sleep 1;
+		uiSleep 1;
 		_hastk = [] call zlt_fnc_hastk;
 		if (_hastk <= 0) exitWith {STR_NEED_TOOLKIT call zlt_fnc_notify; sleep 1.;};	
 		_cycle = _cycle + 1;

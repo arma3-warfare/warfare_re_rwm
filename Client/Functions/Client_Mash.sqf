@@ -29,7 +29,7 @@ if (_side == sideJoined) then {
 	markerIDR = markerIDR + 1;
 //end marker add
 
-while {alive _tent} do { sleep 1;};
+waitUntil { sleep 1; !alive _tent };
 
 deleteMarkerLocal _markerName;
 };

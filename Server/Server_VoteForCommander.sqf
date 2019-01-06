@@ -6,7 +6,7 @@ _comVoteTime = 'WFBE_VOTETIME' Call GetNamespace;
 WF_Logic setVariable [Format["%1CommanderVoteTime",_sideText],_comVoteTime,true];
 
 while {_comVoteTime > 0} do {
-	sleep 1;
+	uiSleep 1;
 	_comVoteTime = _comVoteTime - 1;
 	WF_Logic setVariable [Format["%1CommanderVoteTime",_sideText],_comVoteTime,true];
 };

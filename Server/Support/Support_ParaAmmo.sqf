@@ -47,7 +47,7 @@ _vehicle flyInHeight (200 + random(20));
 _cargo = (crew _vehicle) - [driver _vehicle, gunner _vehicle, commander _vehicle];
 
 while {true} do {
-	sleep 1;
+	uiSleep 1;
 	if (!alive _pilot || !alive _vehicle || isNull _vehicle || isNull _pilot) exitWith {};
 	if (!(isPlayer (leader _playerTeam)) || time - _timeStart > 500) exitWith {{_x setDammage 1} forEach (_cargo+[_pilot,_vehicle]);deleteGroup _grp};
 	_vehicleCoord = [getPos _pilot select 0,getpos _pilot select 1];
@@ -89,7 +89,7 @@ while {true} do {
 [_grp,(_ranPos select _ran),"MOVE",10] Call AIMoveTo;
 
 while {true} do {
-	sleep 1;
+	uiSleep 1;
 	if (!alive _pilot || !alive _vehicle || isNull _vehicle || isNull _pilot) exitWith {};
 	_vehicleCoord = [getPos _pilot select 0,getpos _pilot select 1];
 	_positionCoord = [(_ranPos select _ran) select 0,(_ranPos select _ran) select 1];
